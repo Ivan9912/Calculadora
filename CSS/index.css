@@ -4,6 +4,11 @@
 }		
 
 * {
-    background-color: #f6f8fa;padding: 0px;
+    background-color: #24303c;padding: 0px;
 	margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #f6f8fa;
+    
 }
