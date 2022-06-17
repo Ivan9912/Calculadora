@@ -1,7 +1,9 @@
-*{
-	padding: 0px;
-	margin: 0px;
-	background-color: #f6f8fa;
+.body{
     background-image: url(https://i.imgur.com/dIsSAWa.jpg);
     background-size: cover;
+}		
+
+* {
+    background-color: #f6f8fa;padding: 0px;
+	margin: 0px;
 }
