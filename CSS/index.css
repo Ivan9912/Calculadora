@@ -4,11 +4,36 @@
 }		
 
 * {
-    background-color: #24303c;padding: 0px;
+    padding: 0px;
 	margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #f6f8fa;
     
+}
+.conteiner_title {
+    background-color: #24303c;
+    display: flexbox;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conteiner_input {
+    background-color: #24303c;
+    display: flexbox;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteiner_aclaracion {
+    background-color: #24303c;
+    display: flexbox;
+    width: 40%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }

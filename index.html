@@ -8,10 +8,12 @@
         <link rel="icon" href="Icono/Icono.png" type="image/x-png">
     </head>
     <header>
-        <nav><br><br>
-            <h1>
-                Calculadora para polinomios de segundo grado (F. cuadráticas)
-            </h1><br><br>
+        <nav>
+            <div><br><br>
+                <h1 class="conteiner_title">
+                    Calculadora para polinomios de segundo grado (F. cuadráticas)
+                </h1><br><br>
+        </div>
         </nav>
     </header>
     <body class="body">
@@ -75,59 +77,62 @@
             vertice_y = parseFloat (vertice_y);
 
         </script>
-        <div class="input">
-            <script>
-                document.write ("El valor de A es:  " + "a = " + a );
-            </script><br><br><br>
-            <script>
-                document.write ("El de B es:  " + "b = " + b );
-            </script> <br><br><br>
-            <script>
-                document.write ("Y por último el de C es:  " + "c = " + c );
-            </script> <br><br><br><br>
-            <script>
-                document.write ("La ordenada al Origen es:  " + "y = "  + c );
-            </script> <br><br>
-            <script>
-                document.write ("El valor de la raíz de la determinate es: " + raiz );
-            </script> 
-            <br><br>
-            <script>
-                document.write ("La primera Raíz(X1) está ubicada en: " + "x1 = " + x_1 );
-            </script> <br><br>
-            <script>
-                document.write ("La segunda Raíz(X2) está ubicada en: " + "x2 = " + x_2 );
-            </script> <br><br>
-            <script>
-                document.write ("El Vx está ubicado en: " + vertice_x );
-            </script> <br><br>
-            <script>
-                document.write ("El Vy está ubicado en: " + vertice_y );
-            </script> <br><br>
-            <script>
-                document.write ("Vértice (X.Y):  " + "(" + vertice_x + "," + vertice_y + ")");
-            </script> <br><br><br>
-            <div>
-                <h1>Esta es la función expresada en forma canónica:</h1><br>
+        <div>
+            <div class="conteiner_input">
+                <script>
+                    document.write ("El valor de A es:  " + "a = " + a );
+                </script><br><br><br>
+                <script>
+                    document.write ("El de B es:  " + "b = " + b );
+                </script> <br><br><br>
+                <script>
+                    document.write ("Y por último el de C es:  " + "c = " + c );
+                </script> <br><br><br><br>
+                <script>
+                    document.write ("La ordenada al Origen es:  " + "y = "  + c );
+                </script> <br><br>
+                <script>
+                    document.write ("El valor de la raíz de la determinate es: " + raiz );
+                </script> 
+                <br><br>
+                <script>
+                    document.write ("La primera Raíz(X1) está ubicada en: " + "x1 = " + x_1 );
+                </script> <br><br>
+                <script>
+                    document.write ("La segunda Raíz(X2) está ubicada en: " + "x2 = " + x_2 );
+                </script> <br><br>
+                <script>
+                    document.write ("El Vx está ubicado en: " + vertice_x );
+                </script> <br><br>
+                <script>
+                    document.write ("El Vy está ubicado en: " + vertice_y );
+                </script> <br><br>
+                <script>
+                    document.write ("Vértice (X.Y):  " + "(" + vertice_x + "," + vertice_y + ")");
+                </script> <br><br><br>
+                <div>
+                    <h1>Esta es la función expresada en forma canónica:</h1><br>
+                </div>
+                <script>
+                //el simbolo de "al cuadrado" esta hecho con Alt 253. 
+    
+                    document.write ("y = " + a + " * [X - (" + vertice_x + ")]² + " + vertice_y);
+                </script><br><br>
+                <div>
+                    <h1>Esta es la función expresada en forma factorizada:</h1><br>
+                </div>
+                <script>
+                    document.write ("y = " + a + " * [X - (" + x_1 + ")] * [X - (" + x_2 + ")] + " + vertice_y);
+                </script><br><br>
+     
+                <div>
+                    <h1>Esta es la función expresada en forma polinomica:</h1><br>
+                </div>
+                <script>
+                    document.write ( a + "X² + " + b + "X + " + c);
+                </script><br><br>
             </div>
-            <script>
-            //el simbolo de "al cuadrado" esta hecho con Alt 253. 
 
-                document.write ("y = " + a + " * [X - (" + vertice_x + ")]² + " + vertice_y);
-            </script><br><br>
-            <div>
-                <h1>Esta es la función expresada en forma factorizada:</h1><br>
-            </div>
-            <script>
-                document.write ("y = " + a + " * [X - (" + x_1 + ")] * [X - (" + x_2 + ")] + " + vertice_y);
-            </script><br><br>
- 
-            <div>
-                <h1>Esta es la función expresada en forma polinomica:</h1><br>
-            </div>
-            <script>
-                document.write ( a + "X² + " + b + "X + " + c);
-            </script><br><br>
 
         </div> <br><br><br><br><br>
         <div>  <br><br>
@@ -138,8 +143,12 @@
         </div>
 
         <div>
-            <h3> ¡Aclaración! </h3>
-            <p>Si X1 y X2 presentan NaN es porque la raíz dentro de la <br>ecuación da como resultado un numero negativo, o cero. <br><b>Sí</b> la raíz de la <b>Determinante da</b> como resultado <b>cero</b>, <br><b>tomar</b> el valor de <b>Vx</b> como <B>única raíz</B>.</p><br><br><br><br><br><br><br><br>
+            <div class="conteiner_aclaracion">  
+                <h3> ¡Aclaración! </h3>
+                <p>Si X1 y X2 presentan NaN es porque la raíz dentro de la <br>ecuación da como resultado un numero negativo, o cero. <br><b>Sí</b> la raíz de la <b>Determinante da</b> como resultado <b>cero</b>, <br><b>tomar</b> el valor de <b>Vx</b> como <B>única raíz</B>.
+                </p>
+            </div><br><br><br><br><br><br><br><br>
+            
         </div><br><br>
         
     </body>
