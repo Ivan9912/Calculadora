@@ -24,30 +24,30 @@
     <body class="body">
         <script class="Bienvenida">
             //El backslash se hace con Alt + 92.
-            alert ("¡Hola! ¿Qué tal? \nÉste es mí pequeño proyecto para entrar al mundo de la programación y del diseño web. \nTan sólo ingresá 3 números; de los cuales serán interpretados como a, b y c. Son números que determinan una función cuadratica (ax² + bx + c = 0), que usualmente se estudia de la forma polinomíca. \nÉsta calculadora analíza si tiene raíces (x=0) y las halla, como también su ordenada al orígen, y su vértice en (X,Y). Entretenéte, estudía, comprobá los resultados. ¡Saludos!");
+            alert ("¡Hola! \n¿Qué tal? \nÉste es mí pequeño proyecto para entrar al mundo de la programación y del diseño web. \nTan sólo ingresá 3 números; de los cuales serán interpretados como a, b y c. Son números que determinan una función cuadratica (ax² + bx + c = 0), que usualmente se estudia de la forma polínomica. \nÉsta calculadora analíza si tiene raíces (x=0) y las halla; si no las halla da como resultado 'NaN', como también haya su ordenada al orígen y su vértice en (X,Y). \nEntretenéte, estudía, comprobá los resultados. \n¡Saludos!");
         </script>
         <script class="A">
-            let a = prompt("Hola necesito el valor de A:");
+            let a = prompt("Hola necesito el valor que quieras asignarle a la variable de a: ");
             while ( /\D/.test(a)) {
-                a = prompt("Entre un número y no una letra: ");};
+                a = prompt("Ingresá un número y no una letra, por favor: ");};
             while (a == null || a == "") {
-                a = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
+                a = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a íntentar");};
         </script>
         <br>
         <script class="B">
-            let b = prompt("Hola necesito el valor de B:");
+            let b = prompt("Ahora ¿Qué valor tendrá b?:" );
             while ( /\D/.test(b)) {
-                b = prompt("Entre un número y no una letra: ");};
+                b = prompt("Ingresá un número y no una letra, por favor: ");};
             while (b == null || b == "") {
-                b = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
+                b = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a íntentar");};
         </script>
         <br>
         <script class="C">
-            let c = prompt("Hola necesito el valor de C:");
+            let c = prompt("Y por último, ingresá el valor de c: ");
             while ( /\D/.test(c)) {
-                c = prompt("Entre un número y no una letra: ");};
+                c = prompt("Ingresá un número y no una letra, por favor: ");};
             while (c == null || c == "") {
-                c = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
+                c = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a íntentar");};
         </script> 
 
         <script class="variables">
