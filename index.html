@@ -30,7 +30,7 @@
             let a = prompt("Hola necesito el valor que quieras asignarle a la variable de 'a': ");
             while ( /\D/.test(a)) {
                 a = prompt("Ingresá un número y no una letra, por favor: ");};
-            while (a == null || a == "") {
+            while (a == null || a == "" || /\D/.test(a)) {
                 a = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a intentar.");};
         </script>
         <br>
@@ -38,7 +38,7 @@
             let b = prompt("Ahora ¿Qué valor tendrá 'b'?:" );
             while ( /\D/.test(b)) {
                 b = prompt("Ingresá un número y no una letra, por favor: ");};
-            while (b == null || b == "") {
+            while (b == null || b == "" || /\D/.test(b)) {
                 b = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a intentar.");};
         </script>
         <br>
@@ -46,7 +46,7 @@
             let c = prompt("Y por último, ingresá el valor de 'c': ");
             while ( /\D/.test(c)) {
                 c = prompt("Ingresá un número y no una letra, por favor: ");};
-            while (c == null || c == "") {
+            while (c == null || c == "" || /\D/.test(c)) {
                 c = prompt ("¿Estás seguro de que ingresaste algún número?\nVuelve a intentar.");};
         </script> 
 
