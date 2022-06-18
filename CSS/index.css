@@ -1,18 +1,26 @@
-.body, .header{
+.body, .header{ /*Le agrego la imagen de fondo desde imgur.*/
     background-image: url(https://i.imgur.com/BPNHeSP.jpg);
     background-size: cover;
 }	
 
-* {
+* { /*Centro texto le agrego tipografia y color a las letras en blanco.*/
     padding: 0px;
 	margin: 0px;
-    padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #f6f8fa;
     
 }
-.conteiner_title-1 {
+.imagen_oscuro { /*Le agrego los bordes y el color que recubre el fondo.*/
+    filter:brightness(1);
+    box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
+    -webkit-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
+    -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
+
+    border-radius: 10px 10px 35px 35px; -webkit-border-radius: 10px 10px 35px 35px;
+    -moz-border-radius: 10px 10px 35px 35px; border: 6px none #24303c;
+}
+.conteiner_title-1 { /*Contiene el fondo y las sombras.*/
     box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -webkit-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -moz-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset;
     border-radius: 60px 60px 60px 60px; -webkit-border-radius: 60px 60px 60px 60px; -moz-border-radius: 60px 60px 60px 60px; border: 1px solid rgba(255,56,256,0);
     background-color: #24303c;
@@ -23,14 +31,14 @@
     margin-left: auto;
     margin-right: auto;
 }
-.conteiner_title-2 {
+.conteiner_title-2 { /*Sólo contiene el texto y modifica su tamaño.*/
     display: block;
     width: 90%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-.conteiner_input {
+.conteiner_input { /*Contiene todo las respuestas, el fondo y las sombras.*/
     box-shadow: -150px 7px 227px -17px rgba(37,105,242,0.81) inset; -webkit-box-shadow: -150px 7px 227px -17px rgba(37,105,242,0.81) inset; -moz-box-shadow: -150px 7px 227px -17px rgba(37,105,242,0.81) inset;
     border-radius: 60px 60px 60px 60px; -webkit-border-radius: 60px 60px 60px 60px; -moz-border-radius: 60px 60px 60px 60px; border: 1px solid rgba(255,56,256,0);
     background-color: #24303c;
@@ -42,7 +50,7 @@
     margin-right: auto;
 }
 
-.conteiner_aclaracion-1 {
+.conteiner_aclaracion-1 { /*Contiene el fondo y las sombras.*/
     box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -webkit-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -moz-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset;
     border-radius: 60px 60px 60px 60px; -webkit-border-radius: 60px 60px 60px 60px; -moz-border-radius: 60px 60px 60px 60px; border: 1px solid rgba(255,56,256,0);
     background-color: #24303c;
@@ -54,20 +62,20 @@
     margin-right: auto;
 }
 
-.conteiner_aclaracion-2 {
+.conteiner_aclaracion-2 { /*Contiene los parrafos.*/
     display: block;
     width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-.flex_img {
+.flex_img { /*Acá intenté modificar las imagenes.*/
     display: flexbox;
     flex-direction: row;
     border: #24303c;
     border-radius: 5px;
 }
-.separate {
+.separate { /* ësta es una separación de los resultados con las imagenes.*/
     box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
     -webkit-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
     -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
@@ -78,15 +86,6 @@
     -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
 }
 
-.imagen_oscuro {
-    filter:brightness(1);
-    box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
-    -webkit-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
-    -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
-
-    border-radius: 10px 10px 35px 35px; -webkit-border-radius: 10px 10px 35px 35px;
-    -moz-border-radius: 10px 10px 35px 35px; border: 6px none #24303c;
-}
-.canonica, .factorizada, .polinomica {
+.canonica, .factorizada, .polinomica { /*Ésto cambia el tamaño de las letras.*/
     font-size: 50%;
 }

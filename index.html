@@ -8,20 +8,6 @@
         <link rel="icon" href="Icono/Icono.png" type="image/x-png">
     </head>
     <header>
-        <nav>
-            <div class="imagen_oscuro">            
-                <div><br><br></div>
-                <div class="conteiner_title-1"><br>
-                    <div class="conteiner_title-2">                    
-                        <h1>
-                        Calculadora para polinomios de segundo grado (F. cuadráticas)
-                        </h1><br>
-                    </div>
-                </div><br><br>
-            </div>
-        </nav>
-    </header>
-    <body class="body">
         <script class="Bienvenida">
             //El backslash se hace con Alt + 92.
             alert ("¡Hola! \n¿Qué tal? \nÉste es mí pequeño proyecto para entrar al mundo de la programación y del diseño web. \nTan sólo ingresá 3 números; de los cuales serán interpretados como a, b y c. Son números que determinan una función cuadratica (ax² + bx + c = 0), que usualmente se estudia de la forma polínomica. \nÉsta calculadora analíza si tiene raíces (x=0) y las halla; si no las halla da como resultado 'NaN', como también halla su ordenada al orígen y su vértice en (X,Y). \nEntretenéte, estudía, comprobá los resultados. \n¡Saludos!");
@@ -33,7 +19,6 @@
             while (a == null || a == "" || /\D/.test(a)) {
                 a = prompt ("¿Estás seguro de que ingresaste algún número para 'a'?\nVuelve a intentar.");};
         </script>
-        <br>
         <script class="B">
             let b = prompt("Ahora ¿Qué valor tendrá 'b'?:" );
             while ( /\D/.test(b)) {
@@ -41,7 +26,6 @@
             while (b == null || b == "" || /\D/.test(b)) {
                 b = prompt ("¿Estás seguro de que ingresaste algún número para 'b'?\nVuelve a intentar.");};
         </script>
-        <br>
         <script class="C">
             let c = prompt("Y por último, ingresá el valor de 'c': ");
             while ( /\D/.test(c)) {
@@ -49,7 +33,20 @@
             while (c == null || c == "" || /\D/.test(c)) {
                 c = prompt ("¿Estás seguro de que ingresaste algún número para 'c'?\nVuelve a intentar.");};
         </script> 
-
+        <nav>
+            <div class="imagen_oscuro">            
+                <div><br><br></div>
+                <div class="conteiner_title-1"><br>
+                    <div class="conteiner_title-2">                    
+                        <h1>
+                        Calculadora para polinomios de segundo grado (F. cuadráticas)
+                        </h1><br>
+                    </div>
+                </div><br><br>
+            </div>
+        </nav><br><br>
+    </header>
+    <body class="body">
         <script class="variables">
             //Cálculo de la raiz situado en el numerador de la ecuación.
             var raiz; 
@@ -87,7 +84,6 @@
             var vertice_y;
             vertice_y = (X_a ** 2) + X_b + c;
             vertice_y = parseFloat (vertice_y);
-
         </script>
         <div>
             <div class="conteiner_input">
@@ -141,8 +137,8 @@
                     <h1>Esta es la función expresada en forma canónica:</h1><br>
                 </div>
                 <script>
+
                 //el simbolo de "al cuadrado" esta hecho con Alt + 253. 
-    
                     document.write ("y = " + a + " * [x - (" + vertice_x + ")]² + " + vertice_y);
                 </script><br><br>
                 <div class="factorizada">
@@ -159,8 +155,6 @@
                     document.write ( a + "x² + " + b + "x + " + c);
                 </script><br><br>
             </div>
-
-
         </div> <br><br><br>
             <div class="separate">
                 <br>
