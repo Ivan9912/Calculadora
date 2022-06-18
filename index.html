@@ -22,25 +22,31 @@
         </nav>
     </header>
     <body class="body">
+        <script class="Bienvenida">
+            alert ("¡Hola! ¿Qué tal? Éste es mí pequeño proyecto para entrar al mundo de la programación y del diseño web. Tan sólo ingresá 3 números; de los cuales serán interpretados como a, b y c. Son números que determinan una función cuadratica (ax² + bx + c = 0), que usualmente se estudia de la forma polinomíca. Ésta calculadora analíza si tiene raíces (x=0) y las halla, como también su ordenada al orígen, y su vértice en (X,Y). Entretenéte, estudía, comprobá los resultados. ¡Saludos!");
+        </script>
         <script class="A">
             let a = prompt("Hola necesito el valor de A:");
-            while (a == null || /\D/.test(a) || a == "") {
-                a = prompt("Entre un número y no una letra: ");
-            };
+            while ( /\D/.test(a)) {
+                a = prompt("Entre un número y no una letra: ");};
+            while (a == null || a == "") {
+                a = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
         </script>
         <br>
         <script class="B">
             let b = prompt("Hola necesito el valor de B:");
-            while (b == null || /\D/.test(b) || b == "") {
-                b = prompt("Entre un número y no una letra: ");
-            };
+            while ( /\D/.test(b)) {
+                b = prompt("Entre un número y no una letra: ");};
+            while (b == null || b == "") {
+                b = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
         </script>
         <br>
         <script class="C">
             let c = prompt("Hola necesito el valor de C:");
-            while (c == null || /\D/.test(c) || c == "") {
-                c = prompt("Entre un número y no una letra: ");
-            };
+            while ( /\D/.test(c)) {
+                c = prompt("Entre un número y no una letra: ");};
+            while (c == null || c == "") {
+                c = prompt ("¿Realmente estás seguro de que ingresaste algún número?");};
         </script> 
 
         <script class="variables">
