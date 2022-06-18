@@ -9,13 +9,13 @@
     </head>
     <header>
         <nav>
-            <div>
-                <br><br>
-            </div>
-            <div class="conteiner_title"><br>
-                <h1>
-                    Calculadora para polinomios de segundo grado (F. cuadráticas)
-                </h1><br>
+            <div class="imagen_oscuro">            
+                <div><br><br></div>
+                <div class="conteiner_title"><br>
+                    <h1>
+                        Calculadora para polinomios de segundo grado (F. cuadráticas)
+                    </h1><br>
+                </div><br><br>
             </div>
         </nav>
     </header>
@@ -82,7 +82,9 @@
         </script>
         <div>
             <div class="conteiner_input">
-                <div><br><br><br></div>
+                <div><br>
+                    <h1>Resultados</h1><br><br>
+                </div>
                 <script>
                     document.write ("El valor de A es:  ")
                 </script>
@@ -126,7 +128,7 @@
                 <script>
                     document.write ("Vértice (x.y):  " + "(" + vertice_x + "," + vertice_y + ")");
                 </script> <br><br><br>
-                <div>
+                <div class="canonica">
                     <h1>Esta es la función expresada en forma canónica:</h1><br>
                 </div>
                 <script>
@@ -134,14 +136,14 @@
     
                     document.write ("y = " + a + " * [x - (" + vertice_x + ")]² + " + vertice_y);
                 </script><br><br>
-                <div>
+                <div class="factorizada">
                     <h1>Esta es la función expresada en forma factorizada:</h1><br>
                 </div>
                 <script>
                     document.write ("y = " + a + " * [x - (" + x_1 + ")] * [x - (" + x_2 + ")] + " + vertice_y);
                 </script><br><br>
      
-                <div>
+                <div class="polinomica">
                     <h1>Esta es la función expresada en forma polinomica:</h1><br>
                 </div>
                 <script>
@@ -150,7 +152,11 @@
             </div>
 
 
-        </div> <br><br><br><br><br><br><br>
+        </div> <br><br><br>
+            <div class="separate">
+                <br>
+            </div>
+            <br><br><br>
         <div class="flex_img"> 
             <ul>
                 <li>
@@ -166,27 +172,22 @@
         </div>
             <br><br>
         <div>
-            <div class="conteiner_aclaracion"> 
-                <div >
+            <div class="conteiner_aclaracion-1"> 
+                <div class="conteiner_aclaracion-2">
                     <br>
                     <h3> ¡Aclaración! </h3>
                     <p>Si X1 y X2 presentan NaN es porque la raíz dentro de la <br>ecuación da como resultado un numero negativo, o cero. <br><b>Sí</b> la raíz de la <b>Determinante da</b> como resultado <b>cero</b>, <br><b>tomar</b> el valor de <b>Vx</b> como <B>única raíz</B>.
                     </p><br>    
                 </div> 
-
-            </div><br><br><br><br><br><br><br><br>
-            
+            </div><br><br><br><br><br><br><br><br> 
         </div><br><br>
-        
     </body>
-    <footer>
+    <footer class="footer">
         <h1><br>
             <p>
                 &#169; y &#248;  &#178;
-            </p><br><br><br><br><br>
-        </h1>
+            </p><br>
     </footer>
-
 </html>
 
 
