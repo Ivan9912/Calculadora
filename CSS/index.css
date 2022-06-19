@@ -85,7 +85,3 @@
     -webkit-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
     -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
 }
-
-.canonica, .factorizada, .polinomica { /*Ésto cambia el tamaño de las letras.*/
-    font-size: 50%;
-}
