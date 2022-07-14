@@ -16,7 +16,7 @@ document.write ("<br>",
     "El Vy está ubicado en: " + vertice_y, "<br>","<br>", 
     "Vértice (x.y):  " + "(" + vertice_x + "," + vertice_y + ")", "<br>","<br>","<br>", "<br>");
 
-//el simbolo de "al cuadrado" esta hecho con Alt + 253. 
+//el simbolo de "al cuadrado" está hecho con Alt + 253. 
 document.write (
     "<strong>Ésta es la función expresada en forma canónica: </strong>", "<br>", "<br>", 
     "y = " + a + " * [x - (" + vertice_x + ")]² + " + vertice_y, "<br>", "<br>", 

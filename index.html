@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <title>Calculadora de funciones cuadráticas</title>
-        <link rel="stylesheet" type="text/css" href="CSS/index.css">
-        <link rel="shorcut icon" href="Icono/Icono.png" type="image/x-png"> 
-        <link rel="icon" href="Icono/Icono.png" type="image/x-png">
+        <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+        <link rel="shorcut icon" href="Icono/Icono.png" type="image/x-png"/> 
+        <link rel="icon" href="Icono/Icono.png" type="image/x-png"/>
     </head>
     <header>
-        <script src="JS/index.js" class="Bienvenida"> </script>
+       <script src="JS/init.js" class="Dates"> </script>         
         <nav>
             <div class="imagen_oscuro">            
                 <div><br><br></div>
@@ -23,7 +23,31 @@
         </nav><br><br>
     </header>
     <body class="body">
+ 
         <script src="JS/resultados_calculo.js" class="variables"></script>
+        <div>
+            <div class="conteiner_Data">
+                <form>
+                    <p><br><br>
+                        Aquí ingrese el valor númerico que desee asignarle a la variable <b>a</b>: <br><br>
+                    </p>
+                    <input type = "number" required = "" placeholder = "Valor de a" class="input__color-2"/>
+
+                    <p> <br><br>
+                        Aquí ingrese el valor númerico que desee asignarle a la variable <b>b</b>: <br><br>
+                    </p>
+                    <input type = "number" required = "" placeholder = "Valor de b" class="input__color-2"/>
+
+                    <p><br><br>
+                        Aquí ingrese el valor númerico que desee asignarle a la variable <b>c</b>: <br><br>
+                    </p>
+                    <input type = "number" required = "" placeholder = "Valor de c" class="input__color-2"/>
+                    <p><br></p>
+                    <input type ="button" value="Calcular función" id = Calculate class="input__color-2"/>
+
+                </form> <br>
+            </div><br> <br> <br>
+        </div>
         <div>
             <div class="conteiner_input">
                 <script src="JS/resultados_impreso.js"></script>
@@ -65,10 +89,16 @@
     </body>
     <footer class="footer">
         <hr color="#24303c">
-        <h1><br>
+        <h1><br></h1>
             <p>
                 &#169; y &#248;  &#178;
             </p><br>
+        <br>
+        <p>        
+            <input type="text" placeholder="Escribe un numero para 'A'"  class="input__color-1" id="text__A"/>
+            <input type="button" value="Agregar" name="Agregar" class="input__color-2" id="boton__enviar"/><br><br><br>
+        </p>
+        
         <hr color="#24303c">
     </footer>
 </html>

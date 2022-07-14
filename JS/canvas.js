@@ -1,21 +1,43 @@
-var d = document.getElementById ("dibujito");
-var lienzo = d.getContext ("2d");
+var text_a = document.getElementById ("texto__A");
+var boton_a = document.getElementById ("boton__enviar");
 
-lienzo.beginPath();
-lienzo.strokeStyle = "#24303c";
-lienzo.moveTo(0,150);
-lienzo.lineTo(300,150);
-lienzo.moveTo(150,0);
-lienzo.lineTo(150,300);
+var di = document.getElementById ("dibujito");
+var lienzo = di.getContext ("2d");
 
-lienzo.moveTo(0,0);
-lienzo.lineTo(300,0);
-lienzo.moveTo(0,0);
-lienzo.lineTo(0,300);
-lienzo.moveTo(300,300);
-lienzo.lineTo(0,300);
-lienzo.moveTo(300,300);
-lienzo.lineTo(300,0);
+var lineas = 30;
+var l = 0;
+var xf, yi;
+var xi, yf;
 
-lienzo.stroke();
-lienzo.closePath();
+dibujarLinea ("#24303c", 1, 150, 300, 150);
+dibujarLinea ("#24303c", 150, 1, 150, 300);
+dibujarLinea ("#24303c", 1, 1, 300, 1);
+dibujarLinea ("#24303c", 1, 1, 1, 300);
+dibujarLinea ("#24303c", 300 , 300, 1, 300);
+dibujarLinea ("#24303c", 300 , 300, 300, 1);
+
+for (l = 0; l < lineas; l += 0.1)
+{
+    yi = 10 * l;
+    xf = 10 * (l + 1);
+    dibujarLinea ("red", 0 , yi, xf, 300);
+    console.log("linea" + l);
+}
+
+for (l = 0; l < lineas; l += 0.1)
+{
+    xi = 300 - (10 * l);
+    yf = 300 - (10 * (l + 1));
+    dibujarLinea ("blue", xi, 0, 300, yf);
+    console.log("linea" + l);
+}
+
+function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
+{
+    lienzo.beginPath();
+    lienzo.strokeStyle = color;
+    lienzo.moveTo(xinicial,yinicial);
+    lienzo.lineTo(xfinal,yfinal);
+    lienzo.stroke();
+    lienzo.closePath();
+}
