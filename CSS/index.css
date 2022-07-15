@@ -15,7 +15,7 @@
     color: #f6f8fa;
 }
 .input__color-1, .input__color-2 {
-    color:#24303c
+    color:#24303c;
 }
 .imagen_oscuro { /*Le agrego los bordes y el color que recubre el fondo.*/
     filter:brightness(1);

@@ -1,4 +1,7 @@
 
+
+if (a.value && b.value && c.value != null || a && b && c != "" )
+{
 document.write ("<br>",
     "RESULTADOS: ", "<br>","<br>",
     "El valor de <strong>A</strong> es:  ", "<br>", 
@@ -24,3 +27,4 @@ document.write (
     "y = " + a + " * [x - (" + x_1 + ")] * [x - (" + x_2 + ")] + " + vertice_y, "<br>", "<br>", 
     "<strong>Ésta es la función expresada en forma polinomica: </strong>", "<br>", "<br>", 
     a + "x² + " + b + "x + " + c, "<br>", "<br>");
+}
