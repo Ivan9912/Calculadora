@@ -10,6 +10,7 @@
 * { /*Centro texto le agrego tipografia y color a las letras en blanco.*/
     padding: 0px;
 	margin: 0px;
+    font-display: optional;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #f6f8fa;
