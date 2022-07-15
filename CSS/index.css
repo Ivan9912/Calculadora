@@ -14,7 +14,7 @@
     text-align: center;
     color: #f6f8fa;
 }
-.input__color-1, .input__color-2 {
+.input__color-1, .input__color-2, .eventButtonColor {
     color:#24303c;
 }
 .imagen_oscuro { /*Le agrego los bordes y el color que recubre el fondo.*/

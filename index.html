@@ -24,27 +24,29 @@
     </header>
     <body class = "body">
  
-                
+          
         <div>
             <div class = "conteiner_Data">
                  <br><br>
                 <div class = "input__color-2">
                 <label for="domTextElement"> Variable A: </label>
-                <input type = "number" id ="domTextElement" class = "input__color-2"><br><br>
+                <input type = "number" id ="domTextElementA" class = "input__color-2"><br><br>
                 <label for="domTextElement2"> Variable B: </label>
-                <input type = "number" id ="domTextElement2" class = "input__color-2"><br><br>
+                <input type = "number" id ="domTextElementB" class = "input__color-2"><br><br>
                 <label for="domTextElement3"> Variable C: </label>
-                <input type = "number" id ="domTextElement3" class = "input__color-2"> <br><br>
+                <input type = "number" id ="domTextElementC" class = "input__color-2"> <br><br>
                
-                <button type = "button" onclick="getValueInput ()" class = "eventButtonColor" id="Calculate2"> Calcular Función</button><br><br>
-                <p id="valueInput"> </p>
+                <button type = "button" onclick="getValueInput ()" class = "eventButtonColor" id="buttonCalculator"> Calcular Función</button><br><br>
 
                 <script src = "JS/calculateData.js" class = "variables"></script>
+                <script src = "JS/eventMouse.js" ></script>
                 </div>
-        </div>
-            <div>
-                <br><br><br>
-            </div><br><br><br>
+        </div><br><br>
+        <div class = "conteiner_Data">
+        <br><br><br>
+                <p id="valueInput"> <h1>Respuestas...:</h1><br><br><br></p>
+        </div><br><br><br>
+
         <div class = "separate">
             <hr color = "#24303c"><br><hr color = "#24303c">
         </div>
@@ -88,9 +90,10 @@
         <br>
         <p>        
             <input type = "text" placeholder = "Escribe un numero para 'A'"  class = "input__color-1" id = "text__A"/>
-            <input type = "button" value = "Agregar" name = "Agregar" class = "input__color-2" id = "boton__enviar"/><br><br><br>
+            <input type = "button" value = "Agregar" name = "Agregar" class = "eventButtonColor" id = "boton__enviar"/><br><br><br>
         </p>
         
         <hr color = "#24303c">
+        <script src = "JS/eventButtonFooter.js" ></script>
     </footer>
 </html>
