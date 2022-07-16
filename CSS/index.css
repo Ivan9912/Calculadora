@@ -1,5 +1,3 @@
-
-
 * { /*Centro texto le agrego tipografia y color a las letras en blanco.*/
     padding: 0px;
 	margin: 0px;
@@ -61,7 +59,7 @@
     -webkit-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
     -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
 }
-.flex_img { /*Acá intenté modificar las imagenes.*/
+.flex_img-1 { /*Acá intenté modificar las imagenes.*/
     box-shadow: 8px 11px 14px 1px rgba(255,255,255,1);
     -webkit-box-shadow: 8px 11px 14px 1px rgba(255,255,255,1);
     -moz-box-shadow: 8px 11px 14px 1px rgba(255,255,255,1);
