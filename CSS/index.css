@@ -73,7 +73,7 @@
     -moz-box-shadow: 2px 1px 400px 200px rgba(36,48,60,0.45) inset;
 }
 .flex_img { /*Acá intenté modificar las imagenes.*/
-    display: flexbox;
+    display: block
     flex-direction: row;
     border: #24303c;
     border-radius: 5px;
