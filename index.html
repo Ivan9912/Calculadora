@@ -5,8 +5,7 @@
         <meta name = "keywords" content = "Calculator, Function, HTML, CSS, JavaScript"/>
         <meta name = "description" content = "Calculadora gratuita para funciones cuadraticas" />
         <meta name = "author" content = "IAMRusty"/>
-        <meta http-equiv = "refresh" content = "300"/>
-        <meta name = "viewport" content = "width-device-widgh, initial-scale = 1.0"/> 
+        <meta http-equiv = "refresh" content = "300"/> 
         <title>Calculadora de funciones cuadráticas</title>
         <link rel = "stylesheet" type = "text/css" href = "CSS/index.css"/>
         <link rel = "shorcut icon" href = "Icono/Icono.png" type = "image/x-png"/> 
@@ -32,29 +31,30 @@
             <div class = "conteiner_Data"><br><br>
                 <div class = "input__color-2">
                     <label for="domTextElement">
-                        Variable A: 
+                        Variable (a): 
                     </label>
-                    <input type = "number" id ="domTextElementA" required = "" placeholder = "Variable Dependien A"  class = "input__color-2"><br><br>
+                    <input type = "number" id ="domTextElementA" required = "" placeholder = "Variable Dependien 'A'"  class = "input__color-2"><br><br>
                     <label for="domTextElement2">
-                        Variable B: 
+                        Variable (b): 
                     </label>
-                    <input type = "number" id ="domTextElementB" required = "" placeholder = "Variable Dependien B" class = "input__color-2"><br><br>
+                    <input type = "number" id ="domTextElementB" required = "" placeholder = "Variable Dependien 'B'" class = "input__color-2"><br><br>
                     <label for="domTextElement3"> 
-                        Variable C: 
+                        Variable (c): 
                     </label>
-                    <input type = "number" id ="domTextElementC" required = "" placeholder = "Variable Inependien C" class = "input__color-2"><br><br>
+                    <input type = "number" id ="domTextElementC" required = "" placeholder = "Variable Inependien 'C'" class = "input__color-2"><br><br>
                 
                     <button type = "button" onclick="getValueInput ()" class = "eventButtonColor" id="buttonCalculator"> 
-                        ---Calcular Función---   
+                        &#160;&#160;Calcular Función&#160;&#160;   
                     </button><br><br>
-
+                    
                     <script src = "JS/calculateData.js" class = "variables"></script>
                     <script src = "JS/eventMouse.js" ></script>
+                    
                 </div>
             </div><br><br>
         </div>
         <div class = "conteiner_Data"><br><br><br>
-                <p id="valueInput"> Ingrese los valores. Luego, en este sector aparecerán sus resultados de la función cuadrática<br><br><br><br></p>
+                <p id="valueInput"> Ingrese los valores. Luego, en este sector aparecerán sus resultados de la función cuadrática.<br><br><br><br></p>
         </div><br><br><br>
         <div class = "separate">
             <hr color = "#24303c"><br><hr color = "#24303c">
@@ -89,14 +89,14 @@
     <footer class = "footer">
         <hr color = "#24303c">
             <h1><br></h1>
-            <p>
-                &#169; y &#248;  &#178;
-            </p><br><br>
             <p>        
-                <input type = "text" placeholder = "Escribe un numero para 'A'"  class = "input__color-1" id = "text__A"/>
-                <input type = "button" value = "Agregar" name = "Agregar" class = "eventButtonColor" id = "boton__enviar"/><br><br><br>
+                <input type = "text" placeholder = "Escribe"  class = "input__color-1" id = "text__A"/>
+                <input type = "button" value = "&#160; Agregar &#160;" name = "Agregar" class = "eventButtonColor" id = "boton__enviar"/><br><br><br>
             </p>
-        <hr color = "#24303c">
-        <script src = "JS/eventButtonFooter.js" ></script>
+            <script src = "JS/eventButtonFooter.js"></script>
+            <p>
+                &#169; 2022 <br> Derechos Reservados  <br><br> Y&#178;IAM&#248;
+            </p><br>
+        <hr color = "#24303c" height = "5"> <br><br></hr>
     </footer>
 </html>
