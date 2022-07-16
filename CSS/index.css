@@ -25,7 +25,7 @@
     border-radius: 90px 90px 90px 90px;
     -webkit-border-radius: 90px 90px 90px 90px;
     -moz-border-radius: 90px 90px 90px 90px;
-    border: 3px solid #001851;
+    border: 2px solid #001851;
 }
 .conteiner_title-1, .conteiner_input, .conteiner_Data, .conteiner_aclaracion-1 { /*Contiene el fondo y las sombras.*/
     box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -webkit-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset; -moz-box-shadow: -76px -8px 87px -17px rgba(37,105,242,0.81) inset;
