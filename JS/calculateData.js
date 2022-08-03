@@ -1,5 +1,4 @@
-const getValueInput = () =>
-    {
+const getValueInput = () => {
     let inputValueA;
     inputValueA = document.getElementById("domTextElementA").value;
     inputValueA = parseFloat (inputValueA);
